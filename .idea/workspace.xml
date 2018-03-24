@@ -19,17 +19,17 @@
       <file leaf-file-name="Problem1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/Problem1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4763#4764#0" expanded="true" />
-                <element signature="e#4806#4807#0" expanded="true" />
-                <element signature="e#4884#4885#0" expanded="true" />
-                <element signature="e#4927#4928#0" expanded="true" />
-                <element signature="e#5003#5004#0" expanded="true" />
-                <element signature="e#5046#5047#0" expanded="true" />
-                <marker date="1521903872349" expanded="true" signature="1861:2327" ph="..." />
+                <element signature="e#4762#4763#0" expanded="true" />
+                <element signature="e#4805#4806#0" expanded="true" />
+                <element signature="e#4883#4884#0" expanded="true" />
+                <element signature="e#4926#4927#0" expanded="true" />
+                <element signature="e#5002#5003#0" expanded="true" />
+                <element signature="e#5045#5046#0" expanded="true" />
+                <marker date="1521903991604" expanded="true" signature="1860:2326" ph="..." />
               </folding>
             </state>
           </provider>
@@ -623,7 +623,7 @@
       <option name="presentableId" value="Default" />
       <updated>1521567505392</updated>
       <workItem from="1521567506986" duration="5147000" />
-      <workItem from="1521730110755" duration="33103000" />
+      <workItem from="1521730110755" duration="33222000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1521813235470</created>
@@ -639,11 +639,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521833084088</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="one more commit">
+      <created>1521903883504</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1521903883504</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38250000" />
+    <option name="totallyTimeSpent" value="38369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -714,7 +721,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit!" />
     <MESSAGE value="Основные задачи" />
-    <option name="LAST_COMMIT_MESSAGE" value="Основные задачи" />
+    <MESSAGE value="one more commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="one more commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -731,13 +739,13 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4763#4764#0" expanded="true" />
-            <element signature="e#4806#4807#0" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4927#4928#0" expanded="true" />
-            <element signature="e#5003#5004#0" expanded="true" />
-            <element signature="e#5046#5047#0" expanded="true" />
-            <marker date="1521903872349" expanded="true" signature="1861:2327" ph="..." />
+            <element signature="e#4762#4763#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
+            <element signature="e#4883#4884#0" expanded="true" />
+            <element signature="e#4926#4927#0" expanded="true" />
+            <element signature="e#5002#5003#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <marker date="1521903991604" expanded="true" signature="1860:2326" ph="..." />
           </folding>
         </state>
       </provider>
@@ -782,17 +790,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/Problem1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4763#4764#0" expanded="true" />
-            <element signature="e#4806#4807#0" expanded="true" />
-            <element signature="e#4884#4885#0" expanded="true" />
-            <element signature="e#4927#4928#0" expanded="true" />
-            <element signature="e#5003#5004#0" expanded="true" />
-            <element signature="e#5046#5047#0" expanded="true" />
-            <marker date="1521903872349" expanded="true" signature="1861:2327" ph="..." />
+            <element signature="e#4762#4763#0" expanded="true" />
+            <element signature="e#4805#4806#0" expanded="true" />
+            <element signature="e#4883#4884#0" expanded="true" />
+            <element signature="e#4926#4927#0" expanded="true" />
+            <element signature="e#5002#5003#0" expanded="true" />
+            <element signature="e#5045#5046#0" expanded="true" />
+            <marker date="1521903991604" expanded="true" signature="1860:2326" ph="..." />
           </folding>
         </state>
       </provider>
