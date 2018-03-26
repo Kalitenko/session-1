@@ -38,16 +38,16 @@ class HW1 implements PropertyHelper{
         if(args_HW1.length > 0) {
             for(String arg : args_HW1) {
                 if (arg.startsWith(name + "="))
-                    return arg;
+                    return arg.substring((name + "=").length());
             }
         }
 
         // Если существует системная настройка вида `name=XXX`, то возвращается её значение.
-        else if(properties.containsKey(name))
+        if(properties.containsKey(name))
             return (properties.getProperty(name));
 
             // Если определена переменная окружения вида `name=XXX`, то используется она.
-        else if(System.getenv().containsKey(name))
+        if(System.getenv().containsKey(name))
             return (System.getenv(name));
 
         return null;
@@ -118,10 +118,14 @@ public class homework {
         System.out.println("homework1.stringValue(\"fff\"): " + homework1.stringValue("fff"));
         System.out.println("homework1.integerValue(\"fff\"): " + homework1.integerValue("fff"));
         System.out.println("homework1.doubleValue(\"fff\"): " + homework1.doubleValue("ggg"));
+
         System.out.println("homework2.integerValue(\"integer_var\"): " + homework2.integerValue("integer_var"));
+        System.out.println("homework2.stringValue(\"integer_var\"): " + homework2.stringValue("integer_var"));
         System.out.println("homework2.doubleValue(\"double_var\"): " + homework2.doubleValue("double_var"));
+
         System.out.println("homework3.integerValue(\"xxx\"): " + homework3.integerValue("xxx"));
         System.out.println("homework3.doubleValue(\"yyy\"): " + homework3.doubleValue("yyy"));
+        System.out.println("homework3.stringValue(\"yyy\"): " + homework3.stringValue("yyy"));
 
 
     }
