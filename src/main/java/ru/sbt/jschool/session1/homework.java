@@ -17,20 +17,20 @@ class HW1 implements PropertyHelper{
     HW1(String[] args, String path){
         args_HW1 = args;
         pathFile = path;
-        properties = new Properties();
-        // в случае пустой строки, загрузки properties из файла не будет
-        if (path.equals(""))
-            properties = System.getProperties();
-        // иначе загрузка из файла
-        else {
+        properties = System.getProperties();
+    }
+
+
+    Properties getPropertiesFromFile(String path)
+    {
+        Properties props = new Properties();
             try {
-                properties.load(new FileInputStream(pathFile));
+                props.load(new FileInputStream(path));
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
+        return props;
     }
-
 
     @Override
     public String stringValue(String name) {
@@ -46,9 +46,19 @@ class HW1 implements PropertyHelper{
         if(properties.containsKey(name))
             return (properties.getProperty(name));
 
-            // Если определена переменная окружения вида `name=XXX`, то используется она.
+        // Если определена переменная окружения вида `name=XXX`, то используется она.
         if(System.getenv().containsKey(name))
             return (System.getenv(name));
+
+        // Если property файл, находящийся по пути, переданном в конструкторе содержит
+        // настройку name, то используется она.
+        if (!pathFile.equals(""))
+        {
+            Properties props = getPropertiesFromFile(pathFile);
+            if(props.containsKey(name))
+                return (props.getProperty(name));
+        }
+
 
         return null;
     }
@@ -78,6 +88,16 @@ class HW1 implements PropertyHelper{
         if(System.getenv().containsKey(name))
             return Integer.parseInt(System.getenv(name));
 
+        // Если property файл, находящийся по пути, переданном в конструкторе содержит
+        // настройку name, то используется она.
+        if (!pathFile.equals(""))
+        {
+            Properties props = getPropertiesFromFile(pathFile);
+            if(props.containsKey(name))
+                return Integer.parseInt(props.getProperty(name));
+        }
+
+
         return null;
     }
 
@@ -100,6 +120,16 @@ class HW1 implements PropertyHelper{
         // Если определена переменная окружения вида `name=XXX`, то используется она.
         if(System.getenv().containsKey(name))
             return Double.parseDouble(System.getenv(name));
+
+        // Если property файл, находящийся по пути, переданном в конструкторе содержит
+        // настройку name, то используется она.
+        if (!pathFile.equals(""))
+        {
+            Properties props = getPropertiesFromFile(pathFile);
+            if(props.containsKey(name))
+                return Double.parseDouble(props.getProperty(name));
+        }
+
 
         return null;
 

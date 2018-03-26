@@ -10,9 +10,6 @@ public class additionalTasks {
         return Long.parseLong(binary, 2);
     }
 
-    static public long binaryToDec2(String binary){
-        return Long.parseLong(binary, 2);
-    }
 
     // На вход подаются 2 строки, содержащие двоичные числа - вернуть строку,
     // содержащую сумму этих чисел в двоичной системе счисления.
@@ -28,7 +25,10 @@ public class additionalTasks {
 
     public static void main(String[] args) {
 
-        String bin = "11101000";
+//        String bin = "11101000";
+        String bin = "0";
         System.out.println(binaryToDec1(bin));
+
+
     }
 }

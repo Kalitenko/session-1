@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2792c6d0-8a41-4229-bd62-4fdf66f236c3" name="Default" comment="add homework1.correction3">
+    <list default="true" id="2792c6d0-8a41-4229-bd62-4fdf66f236c3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/additionalTasks.java" afterPath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/additionalTasks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java" afterPath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,8 +56,8 @@
       <file leaf-file-name="homework.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+            <state relative-caret-position="353">
+              <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -733,7 +735,7 @@
       <option name="presentableId" value="Default" />
       <updated>1521567505392</updated>
       <workItem from="1521567506986" duration="5147000" />
-      <workItem from="1521730110755" duration="57372000" />
+      <workItem from="1521730110755" duration="57432000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1521813235470</created>
@@ -819,11 +821,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522081411378</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add homework1.correction3">
+      <created>1522088118164</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1522088118164</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62519000" />
+    <option name="totallyTimeSpent" value="62579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -901,7 +910,8 @@
     <MESSAGE value="add homework1.correction" />
     <MESSAGE value="add homework1.correction1" />
     <MESSAGE value="add homework1.correction2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework1.correction2" />
+    <MESSAGE value="add homework1.correction3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homework1.correction3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1070,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="162" column="0" lean-forward="true" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+        <state relative-caret-position="353">
+          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
