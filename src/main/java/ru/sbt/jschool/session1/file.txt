@@ -1,1 +1,3 @@
 JSCHOOl1_COUNT=1
+integer_var=999
+double_var=24.54
