@@ -3,10 +3,12 @@ package ru.sbt.jschool.session1;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Map;
 import java.util.Properties;
 
 public class Problem1 {
+    
     public static void main(String[] args) throws FileNotFoundException {
 
 
@@ -101,6 +103,7 @@ public class Problem1 {
         new Task2().runTask();
         new Task3().runTask();
         new Task4().runTask();
+
 
 
     }
