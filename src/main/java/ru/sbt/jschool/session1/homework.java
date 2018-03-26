@@ -31,15 +31,25 @@ class HW1 implements PropertyHelper{
         }
     }
 
-    // Если передан аргумент командной строки вида `name=XXX`, то возвращается он.
+
     @Override
     public String stringValue(String name) {
+        // Если передан аргумент командной строки вида `name=XXX`, то возвращается он.
         if(args_HW1.length > 0) {
             for(String arg : args_HW1) {
                 if (arg.startsWith(name + "="))
                     return arg;
             }
         }
+
+        // Если существует системная настройка вида `name=XXX`, то возвращается её значение.
+        else if(properties.containsKey(name))
+            return (properties.getProperty(name));
+
+            // Если определена переменная окружения вида `name=XXX`, то используется она.
+        else if(System.getenv().containsKey(name))
+            return (System.getenv(name));
+
         return null;
     }
 
@@ -50,6 +60,14 @@ class HW1 implements PropertyHelper{
 
     @Override
     public Integer integerValue(String name) {
+
+        // Если передан аргумент командной строки вида `name=XXX`, то возвращается он.
+        if(args_HW1.length > 0) {
+            for(String arg : args_HW1) {
+                if (arg.startsWith(name + "="))
+                    return Integer.parseInt(arg.substring((name + "=").length()));;
+            }
+        }
 
         // Если существует системная настройка вида `name=XXX`, то возвращается её значение.
         if(properties.containsKey(name))
@@ -65,6 +83,14 @@ class HW1 implements PropertyHelper{
 
     @Override
     public Double doubleValue(String name) {
+
+        // Если передан аргумент командной строки вида `name=XXX`, то возвращается он.
+        if(args_HW1.length > 0) {
+            for(String arg : args_HW1) {
+                if (arg.startsWith(name + "="))
+                    return Double.parseDouble(arg.substring((name + "=").length()));;
+            }
+        }
 
         // Если существует системная настройка вида `name=XXX`, то возвращается её значение.
         if(properties.containsKey(name))
@@ -90,6 +116,8 @@ public class homework {
 
 
         System.out.println("homework1.stringValue(\"fff\"): " + homework1.stringValue("fff"));
+        System.out.println("homework1.integerValue(\"fff\"): " + homework1.integerValue("fff"));
+        System.out.println("homework1.doubleValue(\"fff\"): " + homework1.doubleValue("ggg"));
         System.out.println("homework2.integerValue(\"integer_var\"): " + homework2.integerValue("integer_var"));
         System.out.println("homework2.doubleValue(\"double_var\"): " + homework2.doubleValue("double_var"));
         System.out.println("homework3.integerValue(\"xxx\"): " + homework3.integerValue("xxx"));

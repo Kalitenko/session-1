@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2792c6d0-8a41-4229-bd62-4fdf66f236c3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/additionalTasks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java" afterPath="$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java" />
     </list>
@@ -49,8 +50,8 @@
       <file leaf-file-name="homework.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="553">
+              <caret line="119" column="90" lean-forward="false" selection-start-line="119" selection-start-column="90" selection-end-line="119" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.additionalTasks">
+  <component name="RunManager" selected="Application.homework">
     <configuration default="false" name="Problem1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -287,26 +288,6 @@
       </envs>
       <method />
     </configuration>
-    <configuration default="false" name="homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.sbt.jschool.session1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ru.sbt.jschool.session1.homework" />
-      <option name="VM_PARAMETERS" value="-Dyyy=33.33 -Dxxx=44" />
-      <option name="PROGRAM_PARAMETERS" value="ggg=666 fff=777" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="main" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="additionalTasks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -318,6 +299,26 @@
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="main" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="homework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.sbt.jschool.session1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.sbt.jschool.session1.homework" />
+      <option name="VM_PARAMETERS" value="-Dyyy=33.33 -Dxxx=44" />
+      <option name="PROGRAM_PARAMETERS" value="ggg=66.6 fff=777" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -716,13 +717,13 @@
     </configuration>
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Problem1" />
-      <item index="1" class="java.lang.String" itemvalue="Application.homework" />
-      <item index="2" class="java.lang.String" itemvalue="Application.additionalTasks" />
+      <item index="1" class="java.lang.String" itemvalue="Application.additionalTasks" />
+      <item index="2" class="java.lang.String" itemvalue="Application.homework" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.additionalTasks" />
-        <item index="1" class="java.lang.String" itemvalue="Application.homework" />
+        <item index="0" class="java.lang.String" itemvalue="Application.homework" />
+        <item index="1" class="java.lang.String" itemvalue="Application.additionalTasks" />
         <item index="2" class="java.lang.String" itemvalue="Application.Problem1" />
       </list>
     </recent_temporary>
@@ -738,7 +739,7 @@
       <option name="presentableId" value="Default" />
       <updated>1521567505392</updated>
       <workItem from="1521567506986" duration="5147000" />
-      <workItem from="1521730110755" duration="50166000" />
+      <workItem from="1521730110755" duration="50292000" />
     </task>
     <task id="LOCAL-00001" summary="First commit!">
       <created>1521813235470</created>
@@ -789,15 +790,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522076937149</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add homework1.correction">
+      <created>1522078806981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522078806981</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55313000" />
+    <option name="totallyTimeSpent" value="55439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -809,7 +816,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49462944" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26840317" sideWeight="0.49635416" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26840317" sideWeight="0.49635416" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49785176" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -868,7 +875,8 @@
     <MESSAGE value="one more commit" />
     <MESSAGE value="add homework1" />
     <MESSAGE value="add homework1.attempt2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add homework1.attempt2)" />
+    <MESSAGE value="add homework1.correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="add homework1.correction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1033,8 +1041,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/sbt/jschool/session1/homework.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+        <state relative-caret-position="553">
+          <caret line="119" column="90" lean-forward="false" selection-start-line="119" selection-start-column="90" selection-end-line="119" selection-end-column="90" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
