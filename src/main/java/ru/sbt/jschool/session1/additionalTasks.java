@@ -1,6 +1,7 @@
 package ru.sbt.jschool.session1;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class additionalTasks {
     // На вход подаётся строка, содержащее число в бинарной системе счичсления.
@@ -99,14 +100,15 @@ public class additionalTasks {
             System.out.println("intersection[" + i + "] = " + intersection[i]);
         }
 
-        List<?> arrList1 = new ArrayList<>(arr1.length);
-        List<?> arrList2 = new ArrayList<>(arr2.length);
-        List<?> intersectionList = new ArrayList<>(intersection.length);
-        arrList1 = Arrays.asList(arr1);
-        arrList2 = Arrays.asList(arr2);
-        intersectionList = Arrays.asList(intersection);
+        List<Long> arrList1 = new ArrayList<>(arr1.length);
+        List<Long> arrList2 = new ArrayList<>(arr2.length);
+        List<Long> intersectionList = new ArrayList<>(intersection.length);
+        arrList1 = Arrays.stream(arr1).boxed().collect(Collectors.toList());
+        arrList2 = Arrays.stream(arr2).boxed().collect(Collectors.toList());
 
-        System.out.println(arrList1.containsAll(intersectionList) + " and " + intersectionList.containsAll(arrList2));
+        intersectionList =  Arrays.stream(intersection).boxed().collect(Collectors.toList());
+
+        System.out.println(arrList1.containsAll(intersectionList) + " and " + arrList2.containsAll(intersectionList));
 
     }
 }
