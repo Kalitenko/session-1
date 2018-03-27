@@ -1,10 +1,7 @@
 package ru.sbt.jschool.session1;
 
-import java.util.ArrayList;
+import java.util.*;
 
-/**
- * Created by 1 on 26.03.2018.
- */
 public class additionalTasks {
     // На вход подаётся строка, содержащее число в бинарной системе счичсления.
     // Нужно вернуть десятичное число(long)
@@ -49,22 +46,23 @@ public class additionalTasks {
         return Long.parseLong(b1,2) + Long.parseLong(b2,2);
     }
 
+
     // На вход методу подаётся два массива long. Вернуть элементы,
     // которые встречаются в обоих массивах
     static public long[] intersection(long[] arr1, long[] arr2){
 
         ArrayList<Long> coincidences = new ArrayList<Long>();
-        int len = 0;
 
-        if(arr1.length <= arr2.length)
-            len = arr1.length;
-        else
-            len = arr2.length;
+        int len_arr1 = arr1.length;
+        int len_arr2 = arr2.length;
 
 
-        for (int i = 0; i < len; i++)
-            if(arr1[i] == arr2[i])
-                coincidences.add(arr1[i]);
+        for(int i = 0; i < len_arr1; i++)
+        {
+            for(int j = 0; j < len_arr2; j++)
+                if (arr1[i] == arr2[j] && !coincidences.contains(arr1[i]))
+                    coincidences.add(arr1[i]);
+        }
 
         long[] result = new long[coincidences.size()];
 
@@ -73,6 +71,7 @@ public class additionalTasks {
 
         return result;
     }
+
 
     public static void main(String[] args) {
 
@@ -90,15 +89,24 @@ public class additionalTasks {
         System.out.println("sumOfBinary(bin1, bin2) = " + sumOfBinary(bin1, bin2));
         System.out.println("sumOfBinary(bin3, bin4) = " + sumOfBinary(bin3, bin4));
 
-        long arrBin1[] = {25, 151, 1235, 1235 ,61, 624, 34, 235, 44, 44, 664, 235, 84};
-        long arrBin2[] = {25, 151, 1235, 233 , 77 , 62, 34, 235, 34};
+        long arr1[] = {25, 25, 25, 151, 1235, 1235 ,61, 624, 34, 235, 44, 44, 664, 235, 84};
+        long arr2[] = {25, 25, 25, 235, 44, 34 , 77 , 62, 54, 151, 34, 1235};
 
-        long intersection[] = intersection(arrBin1, arrBin2);
+        long intersection[] = intersection(arr1, arr2);
 
         for(int i = 0; i < intersection.length; i++)
         {
             System.out.println("intersection[" + i + "] = " + intersection[i]);
         }
+
+        List<?> arrList1 = new ArrayList<>(arr1.length);
+        List<?> arrList2 = new ArrayList<>(arr2.length);
+        List<?> intersectionList = new ArrayList<>(intersection.length);
+        arrList1 = Arrays.asList(arr1);
+        arrList2 = Arrays.asList(arr2);
+        intersectionList = Arrays.asList(intersection);
+
+        System.out.println(arrList1.containsAll(intersectionList) + " and " + intersectionList.containsAll(arrList2));
 
     }
 }
